@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_alignParentBottom="true"
+    android:gravity="bottom"
+    android:orientation="horizontal"
+    >
+
+    <View
+        android:id="@+id/viewAddStart"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/seek_bar_height_hint"
+        android:alpha="0.8"
+        android:layout_weight="0.001"/>
+
+    <TextView
+        android:id="@+id/tvAddSeek"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/seek_bar_height"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:background="@color/common_tag_green"
+        />
+
+    <View
+        android:id="@+id/viewAddEnd"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/seek_bar_height"
+        android:layout_weight="0.001"/>
+</LinearLayout>

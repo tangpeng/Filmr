@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"  tools:ignore="MissingTranslation">
+    <string-array name="game_tab_func">
+        <item>拼接</item>
+        <item>滤镜</item>
+        <item>速度</item>
+        <item>音乐</item>
+        <item>放大镜</item>
+        <item>文字</item>
+        <item>语音</item>
+        <item>贴图</item>
+        <item>标注</item>
+        <item>展示比例</item>
+    </string-array>
+
+</resources>

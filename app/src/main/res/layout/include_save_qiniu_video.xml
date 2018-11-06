@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tangxiaopeng.videoeditdemo.view.SquareRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/srlQiqiuVideoInlude"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    <com.tangxiaopeng.videoeditdemo.view.SquareGLSurfaceView
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</com.tangxiaopeng.videoeditdemo.view.SquareRelativeLayout>

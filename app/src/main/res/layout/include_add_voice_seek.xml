@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_alignParentBottom="true"
+    android:gravity="bottom"
+   >
+
+    <TextView
+        android:id="@+id/tvAddVoiceSeek"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/seek_bar_height_hint"
+        android:alpha="0.8"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-19dp"
+        android:layout_toRightOf="@+id/ivAddVoiceSeek"
+        android:background="@color/common_tag_pink"
+        />
+
+    <ImageView
+        android:id="@+id/ivAddVoiceSeek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:src="@drawable/kongzhigan1"/>
+</RelativeLayout>

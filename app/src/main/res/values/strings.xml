@@ -1,0 +1,137 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="app_name">易赛短视频demo</string>
+    <string name="upload">上传</string>
+    <string name="cancel_upload">取消上传</string>
+    <string name="if_edit_video">是否编辑视频</string>
+    <string name="dlg_yes">是</string>
+    <string name="dlg_no">否</string>
+
+    <string name="yisai_demo">易赛demo</string>
+    <string name="yisai_min_demo">易赛小demo</string>
+    <string name="yisai_filmr_demos">易赛filmr</string>
+    <string name="title_record">视频拍摄</string>
+    <string name="title_audio_record">音频录制</string>
+    <string name="title_compose">视频拼接</string>
+    <string name="title_image_compose">图片合成</string>
+    <string name="title_player">视频播放</string>
+    <string name="title_screen_record">屏幕录制</string>
+    <string name="title_transcode">视频转码</string>
+    <string name="title_trim">视频剪辑</string>
+    <string name="title_gif">制作GIF动画</string>
+    <string name="title_show_gif">显示GIF动画</string>
+    <string name="title_start_compose">启动合成</string>
+    <string name="title_video_size">视频尺寸</string>
+    <string name="title_video_bitrate">视频码率</string>
+    <string name="title_audio_file_name">音频文件：</string>
+    <string name="title_add_image">添加图片</string>
+    <string name="title_add_music">添加音乐</string>
+    <string name="title_ar_effect">AR 特效</string>
+    <string name="title_from_draft_box">草稿箱</string>
+    <string name="title_all_drafts">草稿列表</string>
+    <string name="title_video_divide">视频分割</string>
+    <string name="title_transition_make">过场字幕</string>
+
+    <string name="dlg_save_draft_title">输入草稿标题</string>
+    <string name="dlg_save_draft_yes">保存</string>
+    <string name="toast_draft_title_exist">已存在相同标题的草稿</string>
+    <string name="toast_draft_save_success">草稿保存成功</string>
+    <string name="toast_draft_save_fail">草稿保存失败</string>
+    <string name="toast_draft_recover_success">草稿恢复成功</string>
+    <string name="toast_draft_recover_fail">草稿恢复失败</string>
+    <string name="dlg_delete_draft">确认删除草稿</string>
+
+    <string name="desc_duration">持续时间</string>
+    <string name="desc_transition_time">转场时间</string>
+    <string name="desc_second">秒</string>
+    <string name="desc_ms">ms</string>
+    <string name="desc_paint_color">画笔颜色</string>
+    <string name="desc_paint_size">画笔大小</string>
+    <string name="desc_paint_undo">撤销</string>
+    <string name="desc_paint_clear">清除</string>
+    <string name="desc_image_tip">请选择所需的贴图！</string>
+    <string name="desc_compose_display_tip">展现方式：</string>
+    <string name="desc_compose_display_full">全屏</string>
+    <string name="desc_compose_display_fit">自适应</string>
+
+    <string name="ar_record">开始录制</string>
+    <string name="ar_stop">停止录制</string>
+    <string name="speed_super_slow">极慢"</string>
+    <string name="speed_slow">慢"</string>
+    <string name="speed_normal">正常"</string>
+    <string name="speed_fast">快"</string>
+    <string name="speed_super_fast">极快"</string>
+
+    <string name="transition_maker_edit">编辑"</string>
+    <string name="transition_maker_confirm">确定"</string>
+    <string name="divide_delete_tip">双击片段可以删除"</string>
+    <string name="divide_add_tip">插入多张图片"</string>
+    <string name="divide_add_video">添加视频"</string>
+    <string name="divide_long_press_tip">长按缩略图排序"</string>
+    <string name="divide_compose">视频合成"</string>
+    <string name="divide_add_transition">添加过场字幕"</string>
+
+    <!-- TuSdk -->
+    <string name="lsq_filter_group_zhuanye">直播厂商合作</string>
+    <string name="lsq_filter_nature">自然</string>
+    <string name="lsq_filter_pink">粉嫩</string>
+    <string name="lsq_filter_jelly">果冻</string>
+    <string name="lsq_filter_ruddy">红润</string>
+    <string name="lsq_filter_sugar">糖水色</string>
+    <string name="lsq_filter_honey">蜜粉</string>
+    <string name="lsq_filter_clear">白皙</string>
+    <string name="lsq_filter_timber">小森林</string>
+    <string name="lsq_filter_whitening">美白</string>
+    <string name="lsq_filter_porcelain">青花瓷</string>
+    <string name="lsq_filter_Skinwhitening_1">美白</string>
+    <string name="lsq_filter_group_ZhiBo0">直播公用</string>
+    <string name="lsq_filter_VideoFair07">自然</string>
+    <string name="lsq_filter_VideoWhiteSkin07">美白</string>
+    <string name="lsq_filter_Brilliantly07">明亮</string>
+    <string name="lsq_filter_Forest09">小森林</string>
+    <string name="lsq_filter_SkinPink07">粉嫩</string>
+
+    <!--  滤镜参数 -->
+    <string name="lsq_filter_set_smoothing">润滑</string>
+    <string name="lsq_filter_set_whitening">白皙</string>
+    <string name="lsq_filter_set_mixied">效果</string>
+    <string name="lsq_filter_set_eyeSize">大眼</string>
+    <string name="lsq_filter_set_chinSize">瘦脸</string>
+    <string name="lsq_filter_set_vignette">暗角</string>
+
+    <string name="lsq_dermabrasion">磨皮</string>
+    <string name="lsq_big_eyes">大眼</string>
+    <string name="lsq_thin_face">瘦脸</string>
+
+
+    <!-- 作品详情界面 -->
+    <string name="txt_workDetails_comment">最新评论</string>
+    <string name="txt_workDetails_comment_hint">说点什么吧</string>
+    <string name="txt_workDetails_comment_voice">按住 说话</string>
+    <string name="txt_workDetails_comment_voice_pressed">松开结束</string>
+    <string name="txt_workDetails_comment_mine">我来评论</string>
+    <string name="txt_workDetails_comment_submit">发布</string>
+
+
+    <!--易赛-->
+    <string name="a"></string>
+    <string name="main_splice">拼接</string>
+    <string name="main_filter">滤镜</string>
+    <string name="main_speed">速度</string>
+    <string name="main_music">音乐</string>
+    <string name="main_zoom">放大镜</string>
+    <string name="main_text">文字</string>
+    <string name="main_voice">语音</string>
+    <string name="main_img">贴图</string>
+    <string name="main_tip">标注</string>
+    <string name="main_scroll">展示比例</string>
+    <string name="music_kit">bekid音乐库</string>
+    <string name="local_import">本地导入</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="priview">预览</string>
+    <string name="video_edit_text_hint">请输入文字</string>
+    <string name="video_edit_text_color">颜色</string>
+    <string name="video_edit_text_color_buttom">底色</string>
+    <string name="voice_speed_hint">滑开取消录音</string>
+
+</resources>

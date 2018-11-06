@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTextBG">#cc222222</color>
+    <color name="colorSpeedPanel">#99222222</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="text1">#FFFFFF</color>
+    <color name="text2">#ffefa8</color>
+    <color name="text3">#fccaff</color>
+    <color name="text4">#61dcff</color>
+    <color name="text5">#ffc502</color>
+    <color name="text6">#ff8621</color>
+    <color name="text7">#ff696a</color>
+    <color name="text8">#7777ff</color>
+    <color name="text9">#ff8621</color>
+    <color name="text10">#00ff00</color>
+    <color name="text11">#ff0000</color>
+    <color name="text12">#0000ff</color>
+
+
+    <color name="index_color">#249CFF</color>
+
+    <color name="index_color_normal">#A2C7FC</color>
+    <color name="index_black">#202125</color>
+    <color name="index_gray">#999999</color>
+    <color name="index_gray_seekbar">#CCCCCC</color>
+
+    <color name="voice_speed_hint_color">#808080</color>
+
+    <color name="paint1">#FFFFFF</color>
+    <color name="paint2">#000000</color>
+    <color name="paint3">#ffefa8</color>
+    <color name="paint4">#fccaff</color>
+    <color name="paint5">#61dcff</color>
+    <color name="paint6">#ffc502</color>
+    <color name="paint7">#ff8621</color>
+    <color name="paint8">#7777ff</color>
+    <color name="paint9">#00ff00</color>
+    <color name="paint10">#0000ff</color>
+
+    <color name="effectBar1">#ffefa8</color>
+    <color name="effectBar2">#fccaff</color>
+    <color name="effectBar3">#61dcff</color>
+    <color name="effectBar4">#ffc502</color>
+    <color name="effectBar5">#ff8621</color>
+    <color name="effectBar6">#7777ff</color>
+
+    <color name="speedTextNormal">#ffdddddd</color>
+    <color name="textSelectorBG">#2d2b39</color>
+
+    <color name="transitionSelectorBG">#575558</color>
+    <color name="sectionDrawColor">#80575558</color>
+    <color name="frameSelectorBorder">#ffffff</color>
+    <color name="frameSelectorBody">#8061dcff</color>
+    <color name="videoFrameActivityMiddleBG">#222222</color>
+    <color name="videoFrameActivityBottomBG">#1a1a1a</color>
+    <color name="half_transparent_black">#44000000</color>
+
+    <!-- color -->
+    <color name="lsq_color_white">#ffffff</color>
+    <color name="lsq_color_black">#000000</color>
+    <color name="lsq_color_red">#ff0000</color>
+    <color name="lsq_color_gray">#707070</color>
+    <color name="lsq_color_orange">#ff6633</color>
+    <color name="lsq_color_transparent">#00000000</color>
+    <color name="lsq_color_semitransparent">#7f000000</color>
+
+    <!-- seekbar -->
+    <color name="lsq_seekbar_drag_color">#f4a11a</color>
+    <color name="lsq_seekbar_view_color">#d9d9d9</color>
+    <color name="lsq_dubbing_unselected_color">#9B9B9B</color>
+    <color name="lsq_dubbing_bg_color">#EFEFEF</color>
+    <color name="lsq_dubbing_record_selected_color">#c17111</color>
+    <color name="lsq_clip_title_color">#3e3e39</color>
+    <color name="lsq_filter_title_color">#f4a11a</color>
+    <color name="lsq_filter_title_default_color">#9fa0a0</color>
+
+    <!-- alpha -->
+    <color name="lsq_alpha_black_66">#66000000</color>
+    <color name="lsq_alpha_black_B4">#B4000000</color>
+    <color name="lsq_alpha_black_CO">#C0000000</color>
+
+
+    <color name="color_f9f9f9">#f9f9f9</color>
+    <color name="color_888888">#888888</color>
+    <color name="color_8d8d8d">#8d8d8d</color>
+    <color name="color_d7d7d7">#d7d7d7</color>
+    <color name="color_c1c1c1">#c1c1c1</color>
+    <color name="color_f0f0f0">#f0f0f0</color>
+    <color name="color_efefef">#efefef</color>
+    <color name="color_c7c7c7">#c7c7c7</color>
+    <color name="color_d3321b">#d3321b</color>
+    <color name="color_ff5f6e">#ff5f6e</color>
+    <color name="color_ff5f6f">#ff5f6f</color>
+    <color name="color_ff8959">#ff8959</color>
+    <color name="color_5f2800">#5f2800</color>
+    <color name="text_back_ground">#7E1D22</color>
+
+    <color name="common_blue">#2592d3</color>
+    <color name="common_bright_blue">#37AEFF</color>
+    <color name="common_tag_blue">#2fa2fd</color>
+    <color name="common_tag_pink">#fe8ca5</color>
+    <color name="common_tag_green">#1ac67c</color>
+    <color name="common_gray">#b2b2b2</color>
+    <color name="common_line_gray">#cecece</color>
+    <color name="common_font_gray">#aaaaaa</color>
+    <color name="common_black">#2d2d2d</color>
+    <color name="common_yellow">#fed700</color>
+    <color name="color_ffc000">#ffc000</color>
+    <color name="common_tag_orange">#ffb400</color>
+    <color name="common_orange">#fea100</color>
+    <color name="common_ffb400">#ffb400</color>
+    <color name="common_no_click">#ffe65d</color>
+    <color name="common_grading">#585858</color>
+    <color name="common_grad">#FAFAFA</color>
+    <color name="common_grad_737373">#737373</color>
+
+    <color name="white_pressed">#FFCFCFCF</color>
+</resources>

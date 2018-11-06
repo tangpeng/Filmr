@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAddEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivEditTextCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:src="@drawable/x1"/>
+
+            <TextView
+                android:id="@+id/TvSpeedTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="文字"
+                android:textColor="@color/index_color"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:id="@+id/ivEditTextSure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:src="@drawable/x2"/>
+        </LinearLayout>
+
+        <com.tangxiaopeng.videoeditdemo.view.TextSelectorPanel
+            android:id="@+id/text_selector_panel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            />
+
+        <EditText
+            android:id="@+id/etEditTextSure"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/border_index_color_normal"
+            android:gravity="center"
+            android:hint="@string/video_edit_text_hint"
+            android:paddingLeft="10dp"
+            android:textColor="@color/index_black"
+            android:textColorHint="@color/index_color_normal"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="28dp"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/video_edit_text_color"
+                android:textColor="@color/index_black"
+                android:textSize="14sp"/>
+
+            <com.tangxiaopeng.videoeditdemo.view.ColorPickerView
+                android:id="@+id/cpvEditText"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="28dp"
+                android:background="#ffffff"
+                app:indicatorColor="#ffffff"
+                app:indicatorEnable="true"
+                app:orientation="horizontal"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivAddEditText"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/a1"/>
+</RelativeLayout>

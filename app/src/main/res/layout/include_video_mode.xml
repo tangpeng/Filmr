@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/llVideoHead"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+    <com.tangxiaopeng.videoeditdemo.view.SquareRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:background="@color/common_gray">
+
+        <VideoView
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"/>
+        <!--播放/ 暂停-->
+        <ImageView
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/exo_controls_play"/>
+
+        <TextView
+            android:id="@+id/video_runtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="12dp"
+            android:text="0/0"
+            android:textColor="@color/colorPrimary"/>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/index_black"/>
+    </com.tangxiaopeng.videoeditdemo.view.SquareRelativeLayout>
+
+
+</LinearLayout>

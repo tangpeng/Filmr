@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_hight">45.0dip</dimen>
+    <dimen name="title_hight_underline">46.0dip</dimen>
+    <dimen name="bottom_bar_hight">48.0dip</dimen>
+    <dimen name="cover_bg_height">235dp</dimen>
+    <dimen name="director_cover_bg_height">203dp</dimen>
+    <dimen name="seek_bar_height">20dp</dimen>
+    <dimen name="seek_bar_height_hint">24dp</dimen>
+
+    <dimen name="size_38">19sp</dimen>
+    <dimen name="size_34">17sp</dimen>
+    <dimen name="size_36">18sp</dimen>
+    <dimen name="size_32">16sp</dimen>
+    <dimen name="size_30">15sp</dimen>
+    <dimen name="size_28">14sp</dimen>
+    <dimen name="size_26">13sp</dimen>
+    <dimen name="size_24">12sp</dimen>
+    <dimen name="size_22">11sp</dimen>
+    <dimen name="size_20">10sp</dimen>
+    <dimen name="size_18">9sp</dimen>
+    <dimen name="default_status_bar_height">25dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+
+</resources>

@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+
+android {
+
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 75
+        versionName "6.2.4"
+    }
+
+    resourcePrefix 'recycler_swipe_'
+
+}
+dependencies {
+    compile "com.android.support:recyclerview-v7:26.1.0"
+    compile "com.yanzhenjie:loading:1.0.2"
+}
+
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '25.3.1'
+            }
+        }
+    }
+}
+

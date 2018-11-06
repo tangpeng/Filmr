@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llIncludeCutVideo"
+    android:layout_width="wrap_content"
+    android:layout_height="75dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rlFrgmentCutEdit"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlFrgmentCutFuncNormal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <com.tangxiaopeng.videoeditdemo.view.RoundImageView
+                android:id="@+id/rivFrgmentCutEditNormal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:alpha="0.5"
+                android:gravity="center"
+                app:border_color="@color/white"
+                app:border_width="0dp"
+                />
+
+            <com.tangxiaopeng.videoeditdemo.view.RoundImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:alpha="0.4"
+                android:gravity="center"
+                android:src="@drawable/bg_index_color"
+                app:border_color="@color/white"
+                app:border_width="0dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvFrgmentNumberNor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:maxLength="4"
+                    android:padding="8dp"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/c1"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlFrgmentCutFuncSelect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <com.tangxiaopeng.videoeditdemo.view.RoundImageView
+                android:id="@+id/rivFrgmentCutEditSelect"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:src="@drawable/bg_index_color"
+                app:border_color="@color/white"
+                app:border_width="0dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvFrgmentNumberSel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-编辑中-"
+                    android:textColor="@color/white"
+                    android:textSize="9sp"/>
+
+                <TextView
+                    android:id="@+id/tvFrgmentCutTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01:05"
+                    android:textColor="@color/white"
+                    android:textSize="9sp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlFragmentCutProcess"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="14dp"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="2dp"
+            android:background="@color/index_color_normal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="4dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"/>
+
+        <LinearLayout
+            android:id="@+id/video_frame_list"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rlGetVideoHandler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:visibility="gone">
+
+                <View
+                    android:id="@+id/handler_left_alpha"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:alpha="0.4"
+                    android:background="@color/index_color"
+                    />
+
+                <View
+                    android:id="@+id/handler_left_alpha_other"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlVideoHandlerLeft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="-2dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/handler_left"
+                    android:alpha="0.4"
+                    android:background="@color/index_color"/>
+
+                <View
+                    android:id="@+id/handler_left"
+                    android:layout_width="12dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="260dp"
+                    android:background="@drawable/a3"/>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/handler_right"
+                android:layout_width="12dp"
+                android:layout_height="55dp"
+                android:clickable="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/a2"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dp"
+                android:layout_toRightOf="@+id/handler_right"
+                android:alpha="0.4"
+                android:background="@color/index_color"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlFrgmentCutEditShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_weight="1"
+        android:background="@color/index_color"
+        android:visibility="gone"
+        >
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_margin="2dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:scrollbarSize="0dp"
+            android:scrollbars="none"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvFragmentCutDelete"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:drawablePadding="-6dp"
+                    android:drawableTop="@drawable/b1"
+                    android:gravity="center"
+                    android:paddingTop="4dp"
+                    android:text="删除"
+                    android:textColor="@color/index_color"
+                    android:textSize="8sp"/>
+
+                <TextView
+                    android:id="@+id/tvFragmentCutSpeed"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:drawablePadding="-6dp"
+                    android:drawableTop="@drawable/b2"
+                    android:gravity="center"
+                    android:text="速度"
+                    android:textColor="@color/index_color"
+                    android:textSize="8sp"/>
+
+                <TextView
+                    android:id="@+id/tvFragmentCutVoice"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:drawablePadding="-6dp"
+                    android:drawableTop="@drawable/b3"
+                    android:gravity="center"
+                    android:text="音量"
+                    android:textColor="@color/index_color"
+                    android:textSize="8sp"/>
+
+                <TextView
+                    android:id="@+id/tvFragmentRotate"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:drawablePadding="-6dp"
+                    android:drawableTop="@drawable/b4"
+                    android:gravity="center"
+                    android:text="旋转"
+                    android:textColor="@color/index_color"
+                    android:textSize="8sp"/>
+
+                <TextView
+                    android:id="@+id/tvFragmentCutMirroring"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:drawablePadding="-6dp"
+                    android:drawableTop="@drawable/b5"
+                    android:gravity="center"
+                    android:text="镜像"
+                    android:textColor="@color/index_color"
+                    android:textSize="8sp"/>
+
+                <TextView
+                    android:id="@+id/tvFragmentCutInOut"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:drawablePadding="-6dp"
+                    android:drawableTop="@drawable/b6"
+                    android:gravity="center"
+                    android:text="进出效果"
+                    android:textColor="@color/index_color"
+                    android:textSize="8sp"/>
+
+                <TextView
+                    android:id="@+id/tvFragmentCutCopy"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:drawablePadding="-6dp"
+                    android:drawableTop="@drawable/b7"
+                    android:gravity="center"
+                    android:paddingTop="4dp"
+                    android:text="复制"
+                    android:textColor="@color/index_color"
+                    android:textSize="8sp"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlFrgmentCutEditOtherShow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_weight="1"
+        android:background="@color/index_color"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_margin="2dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:scrollbarSize="0dp"
+            android:scrollbars="none"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvFragmentCutOtherDelete"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawablePadding="2dp"
+                    android:drawableTop="@drawable/b1"
+                    android:gravity="center"
+                    android:paddingTop="6dp"
+                    android:text="删除"
+                    android:textColor="@color/index_color"
+                    android:textSize="8sp"/>
+
+                <TextView
+                    android:id="@+id/tvFragmentCutOtherCopy"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawablePadding="2dp"
+                    android:drawableTop="@drawable/b7"
+                    android:gravity="center"
+                    android:paddingTop="6dp"
+                    android:text="复制"
+                    android:textColor="@color/index_color"
+                    android:textSize="8sp"/>
+
+                <TextView
+                    android:id="@+id/tvFragmentCutOtherTry"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawablePadding="2dp"
+                    android:drawableTop="@drawable/b11gif"
+                    android:gravity="center"
+                    android:paddingTop="6dp"
+                    android:text="试听"
+                    android:textColor="@color/index_color"
+                    android:textSize="8sp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

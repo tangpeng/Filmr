@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:src="@drawable/jt"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:text="视频编辑"
+            android:textColor="@color/index_black"
+            android:textSize="13sp"/>
+
+        <Button
+            android:id="@+id/save_button_bekid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="@string/dlg_save_draft_yes"
+            android:textColor="@color/index_black"
+            />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/activity_main_tab_radioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="58dip"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:scrollbars="none">
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:background="@android:color/white"
+                android:button="@null"
+                android:drawableTop="@drawable/select_tab_main_splice"
+                android:gravity="center"
+                android:paddingTop="5.0dip"
+                android:text="@string/main_splice"
+                android:textColor="@color/index_black"
+                android:textSize="12.0sp"/>
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:background="@android:color/white"
+                android:button="@null"
+                android:drawableTop="@drawable/select_tab_main_filter"
+                android:gravity="center"
+                android:paddingTop="5.0dip"
+                android:text="@string/main_filter"
+                android:textColor="@color/index_black"
+                android:textSize="12.0sp"/>
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:background="@android:color/white"
+                android:button="@null"
+                android:drawableTop="@drawable/select_tab_main_speed"
+                android:gravity="center"
+                android:paddingTop="5.0dip"
+                android:text="@string/main_speed"
+                android:textColor="@color/index_black"
+                android:textSize="12.0sp"/>
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:background="@android:color/white"
+                android:button="@null"
+                android:drawableTop="@drawable/select_tab_main_splice"
+                android:gravity="center"
+                android:paddingTop="5.0dip"
+                android:text="@string/main_music"
+                android:textColor="@color/index_black"
+                android:textSize="12.0sp"/>
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:background="@android:color/white"
+                android:button="@null"
+                android:drawableTop="@drawable/select_tab_main_zoom"
+                android:gravity="center"
+                android:paddingTop="5.0dip"
+                android:text="@string/main_zoom"
+                android:textColor="@color/index_black"
+                android:textSize="12.0sp"/>
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:background="@android:color/white"
+                android:button="@null"
+                android:drawableTop="@drawable/select_tab_main_text"
+                android:gravity="center"
+                android:paddingTop="5.0dip"
+                android:text="@string/main_text"
+                android:textColor="@color/index_black"
+                android:textSize="12.0sp"/>
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:background="@android:color/white"
+                android:button="@null"
+                android:drawableTop="@drawable/select_tab_main_voice"
+                android:gravity="center"
+                android:paddingTop="5.0dip"
+                android:text="@string/main_voice"
+                android:textColor="@color/index_black"
+                android:textSize="12.0sp"/>
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:background="@android:color/white"
+                android:button="@null"
+                android:drawableTop="@drawable/select_tab_main_img"
+                android:gravity="center"
+                android:paddingTop="5.0dip"
+                android:text="@string/main_img"
+                android:textColor="@color/index_black"
+                android:textSize="12.0sp"/>
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:background="@android:color/white"
+                android:button="@null"
+                android:drawableTop="@drawable/select_tab_main_tip"
+                android:gravity="center"
+                android:paddingTop="5.0dip"
+                android:text="@string/main_tip"
+                android:textColor="@color/index_black"
+                android:textSize="12.0sp"/>
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:background="@android:color/white"
+                android:button="@null"
+                android:drawableTop="@drawable/select_tab_main_scroll"
+                android:gravity="center"
+                android:paddingTop="5.0dip"
+                android:text="@string/main_scroll"
+                android:textColor="@color/index_black"
+                android:textSize="12.0sp"/>
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <include layout="@layout/include_video_mode"/>
+
+    <include layout="@layout/include_mian_qiniu_video"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:gravity="bottom">
+
+        <ImageView
+            android:id="@+id/iv_playback_play"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/q1"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/llSeekBarAddCut"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seek_bar_height"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="2dp"
+                android:background="@color/index_gray_seekbar"
+                android:orientation="horizontal"/>
+
+            <RelativeLayout
+                android:id="@+id/rlAddMusicSeek"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true">
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlAddVoiceSeek"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true">
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlAddTextCutSeek"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlAddChartCutSeek"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlAddPanelCutSeek"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                >
+            </RelativeLayout>
+
+            <SeekBar
+                android:id="@+id/seek_bar_id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seek_bar_height"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:maxHeight="22dip"
+                android:minHeight="22dip"
+                android:paddingEnd="0dp"
+                android:paddingStart="0dp"
+                android:progressDrawable="@drawable/po_seekbar"
+                android:thumb="@drawable/ic_vidoeprocess"
+                android:thumbOffset="0dp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragments_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

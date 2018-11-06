@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="2dp">
+
+    <RelativeLayout
+        android:layout_width="45dp"
+        android:layout_height="45dp">
+
+        <com.tangxiaopeng.videoeditdemo.view.RoundImageView
+            android:id="@+id/rivMusicThumb"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="2dp"/>
+
+        <ImageView
+            android:id="@+id/rivMusicThumbPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/u2"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvMusicThumbName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="下个路口见，爱见不见"
+            android:textColor="@color/index_black"
+            android:textSize="9sp"
+            />
+
+        <TextView
+            android:id="@+id/tvMusicThumbAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="李宇春"
+            android:textColor="@color/index_gray"
+            android:textSize="8sp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivMusicThumbAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="10dp"
+        android:src="@drawable/bule"/>
+
+</LinearLayout>

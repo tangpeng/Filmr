@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/srlQiqiuVideo"
+    android:layout_width="match_parent"
+    android:layout_height="203dp"
+    android:gravity="center"
+    >
+    <FrameLayout
+        android:id="@+id/fragmentsContainerVideo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/srlQiqiuVideoInlude"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/pause_playback_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#0000"
+        android:src="@drawable/qa1"/>
+
+    <TextView
+        android:id="@+id/tv_qiniu_video_runtime"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="14dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:gravity="center"
+        android:background="@drawable/corners_common_gray"
+        android:text="00:00/00:00"
+        android:textColor="@color/white"
+        android:textSize="9sp"/>
+
+    <TextView
+        android:id="@+id/tv_qiniu_video_preview"
+        android:layout_width="41dp"
+        android:gravity="center"
+        android:layout_height="17dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="14dp"
+        android:background="@drawable/corners_common_gray"
+        android:text="@string/priview"
+        android:textColor="@color/white"
+        android:textSize="9sp"/>
+</RelativeLayout>
