@@ -30,8 +30,9 @@ import android.widget.RelativeLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import com.hjq.permissions.OnPermission;
-import com.hjq.permissions.XXPermissions;
+import com.apeng.permissions.EsayPermissions;
+import com.apeng.permissions.OnPermission;
+import com.apeng.permissions.Permission;
 import com.qiniu.pili.droid.shortvideo.PLBuiltinFilter;
 import com.qiniu.pili.droid.shortvideo.PLImageView;
 import com.qiniu.pili.droid.shortvideo.PLMediaFile;
@@ -1989,20 +1990,29 @@ public class BekidMainActivity extends AppCompatActivity implements View.OnClick
     }
 
     public void getPermissions() {
-        XXPermissions.with(this)
-                //.constantRequest() //可设置被拒绝后继续申请，直到用户授权或者永久拒绝
-                //.permission(Permission.SYSTEM_ALERT_WINDOW, Permission.REQUEST_INSTALL_PACKAGES) //支持请求6.0悬浮窗权限8.0请求安装权限
-                .permission("android.permission.RECORD_AUDIO") //不指定权限则自动获取清单中的危险权限
+        EsayPermissions.with(this)
+                .constantRequest() //可设置被拒绝后继续申请，直到用户授权或者永久拒绝
+//                .permission(Permission.SYSTEM_ALERT_WINDOW, Permission.REQUEST_INSTALL_PACKAGES) //支持请求6.0悬浮窗权限8.0请求安装权限
+                .permission(Permission.WRITE_EXTERNAL_STORAGE,Permission.CAMERA,Permission.RECORD_AUDIO)
                 .request(new OnPermission() {
-
                     @Override
                     public void hasPermission(List<String> granted, boolean isAll) {
-
+                        if (isAll) {
+                            Tools.showToast(context,"获取权限成功");
+                        }else {
+                            Tools.showToast(context,"获取权限成功，部分权限未正常授予");
+                        }
                     }
 
                     @Override
                     public void noPermission(List<String> denied, boolean quick) {
-
+                        if(quick) {
+                            Tools.showToast(context,"被永久拒绝授权，请手动授予权限");
+                            //如果是被永久拒绝就跳转到应用权限系统设置页面
+                            EsayPermissions.gotoPermissionSettings(context);
+                        }else {
+                            Tools.showToast(context,"获取权限失败");
+                        }
                     }
                 });
 

@@ -1,6 +1,7 @@
 package com.tangxiaopeng.videoeditdemo;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -8,9 +9,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
+import com.apeng.permissions.EsayPermissions;
+import com.apeng.permissions.OnPermission;
+import com.apeng.permissions.Permission;
 import com.tangxiaopeng.videoeditdemo.utils.GetPathFromUri;
-import com.tangxiaopeng.videoeditdemo.utils.PermissionChecker;
 import com.tangxiaopeng.videoeditdemo.utils.ToastUtils;
+import com.tangxiaopeng.videoeditdemo.utils.Tools;
+
+import java.util.List;
 
 /**
  * @author fanqie
@@ -19,6 +25,7 @@ import com.tangxiaopeng.videoeditdemo.utils.ToastUtils;
  */
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
+    private Context context = MainActivity.this;
     private boolean isQiniu = false;
 
     @Override
@@ -64,12 +71,33 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean isPermissionOK() {
-        PermissionChecker checker = new PermissionChecker(this);
-        boolean isPermissionOK = Build.VERSION.SDK_INT < Build.VERSION_CODES.M || checker.checkPermission();
-        if (!isPermissionOK) {
-            ToastUtils.s(this, "Some permissions is not approved !!!");
-        }
-        return isPermissionOK;
+        EsayPermissions.with(this)
+                .constantRequest() //可设置被拒绝后继续申请，直到用户授权或者永久拒绝
+//                .permission(Permission.SYSTEM_ALERT_WINDOW, Permission.REQUEST_INSTALL_PACKAGES) //支持请求6.0悬浮窗权限8.0请求安装权限
+                .permission(Permission.WRITE_EXTERNAL_STORAGE, Permission.CAMERA, Permission.RECORD_AUDIO)
+                .request(new OnPermission() {
+                    @Override
+                    public void hasPermission(List<String> granted, boolean isAll) {
+                        if (isAll) {
+                            Tools.showToast(context, "获取权限成功");
+
+                        } else {
+                            Tools.showToast(context, "获取权限成功，部分权限未正常授予");
+                        }
+                    }
+
+                    @Override
+                    public void noPermission(List<String> denied, boolean quick) {
+                        if (quick) {
+                            Tools.showToast(context, "被永久拒绝授权，请手动授予权限");
+                            //如果是被永久拒绝就跳转到应用权限系统设置页面
+                            EsayPermissions.gotoPermissionSettings(context);
+                        } else {
+                            Tools.showToast(context, "获取权限失败");
+                        }
+                    }
+                });
+        return true;
     }
 
     @Override
